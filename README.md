@@ -1,36 +1,30 @@
-# Kısa Dönem Kiralama Analiz Aracı — Hızlı Başlangıç
+# Short-Term Rental Analysis Tool — Quick Start Guide
 
-## Kurulum
+## Installation
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
 ```
-Tarayıcıda otomatik açılır (genelde http://localhost:8501).
+It opens automatically in your browser (typically at `http://localhost:8501`).
 
-## Kullanım
-1. İstediğin şehrin Inside Airbnb verisini indir: http://insideairbnb.com/get-the-data/
+## Usage
+1. Download Inside Airbnb data for your target city: http://insideairbnb.com/get-the-data/
    - `listings.csv.gz`
    - `calendar.csv.gz`
-2. Uygulamada bu iki dosyayı yükle (gz olarak da yükleyebilirsin, kod otomatik açar — CSV'ye çıkarman gerekmiyorsa doğrudan dene, sorun olursa `gunzip` ile aç).
-3. Sol menüden oda tipi ve minimum ilan sayısı filtrelerini ayarla.
+2. Upload these two files to the application (you can upload them directly in `.gz` format as the code extracts them automatically—try uploading directly without extracting to CSV, and extract via `gunzip` only if you encounter an issue).
+3. Adjust the room type and minimum listing count filters from the sidebar.
 
-## Bu aracı satışa nasıl çevirirsin
-1. Bir şehri seç, dashboard'u çalıştır, ekran görüntüsü/kısa ekran kaydı al.
-2. O şehirdeki host Facebook gruplarına veya Instagram'daki kısa kiralama yönetim
-   hesaplarına şu mesajı gönder:
+## How to Turn This Tool into Sales
+1. Select a city, run the dashboard, and take screenshots or record a short screen capture.
+2. Send the following outreach message to local host Facebook groups or short-term rental management accounts on Instagram:
 
-   > "[Şehir]'deki host'ların fiyat/doluluk trendine baktım, mahallenize özel
-   > ücretsiz bir analiz hazırladım. Kaçırdığınız gelir potansiyelini gösteren
-   > bir rapor — ister misiniz?"
+   > "I looked into the pricing and occupancy trends for hosts in [City] and put together a free, neighborhood-specific analysis. It highlights potential missed revenue opportunities—would you like me to send it over?"
 
-3. İlgilenen host'a demo'yu göster, "kayıp gelir" rakamını vurgula.
-4. Fiyatlandırma:
-   - Tek seferlik analiz raporu: $150-250 (ilk müşteriler için)
-   - Aylık fiyat optimizasyonu aboneliği: $50-100/ay (tekrarlayan gelir)
+3. Walk interested hosts through the demo and highlight the "missed revenue" figures.
+4. Pricing structure:
+   - One-time analysis report: $150–250 (for early clients)
+   - Monthly pricing optimization subscription: $50–100/month (recurring revenue)
 
-## Notlar
-- `estimated_occupancy_l365d` ve `estimated_revenue_l365d` alanları Inside Airbnb'nin
-  kendi tahmin modelinden gelir; %100 kesin değildir ama tutarlı bir kıyaslama sağlar.
-- Calendar dosyasındaki "unavailable" oranı hem gerçek rezervasyonları hem de host'un
-  manuel blokladığı günleri içerir — mevsimsellik için yaklaşık bir göstergedir,
-  müşteriye sunarken bunu belirt.
+## Notes
+- The `estimated_occupancy_l365d` and `estimated_revenue_l365d` fields come from Inside Airbnb's proprietary estimation model; they are not 100% exact, but they provide consistent benchmark comparisons.
+- The "unavailable" rate in the calendar file includes both confirmed bookings and days manually blocked by the host—it serves as an approximate proxy for seasonality, so be sure to disclose this when presenting to clients.
