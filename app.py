@@ -9,9 +9,6 @@ dosyalarını yükle, otomatik olarak 4 temel analizi gör:
 3. Rakip karşılaştırması (oda tipi + kapasiteye göre)
 4. Tahmini kayıp gelir (kendi peer-grubuna göre az performans gösteren ilanlar)
 
-Çalıştırmak için:
-    pip install streamlit pandas plotly
-    streamlit run app.py
 """
 
 import streamlit as st
