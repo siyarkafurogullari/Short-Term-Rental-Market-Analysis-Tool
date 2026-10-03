@@ -24,6 +24,19 @@ It is not just an analytical dashboard; it is a **business development tool** de
 
 ---
 
+## 🗂️ Example Data: How to Test the App?
+
+To test the live dashboard, you need to download raw data for a specific city. 
+
+1. Go to the open-source data provider: **[Inside Airbnb - Get the Data](http://insideairbnb.com/get-the-data/)**
+2. Scroll down and find any city you want to analyze (e.g., *Istanbul, London, Paris*).
+3. Download **only** these two specific files for your chosen city:
+   - 📄 `listings.csv.gz`
+   - 📅 `calendar.csv.gz`
+4. Go to the Live Demo link and upload these files directly. *(No need to extract them; the app processes `.gz` files automatically!)*
+
+---
+
 ## ✨ Key Features
 
 - 📊 **Dynamic Data Processing:** Seamlessly processes raw `.csv.gz` files directly—no manual extraction required.
