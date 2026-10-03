@@ -24,6 +24,15 @@ It is not just an analytical dashboard; it is a **business development tool** de
 
 ---
 
+## ✨ Key Features
+
+- 📊 **Dynamic Data Processing:** Seamlessly processes raw `.csv.gz` files directly—no manual extraction required.
+- 🎯 **Advanced Filtering:** Granular control over room types and minimum listing counts to filter out outliers.
+- 💰 **Revenue Estimation:** Benchmarks properties against local competitors to highlight potential missed revenue.
+- 📅 **Seasonality Tracking:** Uses calendar availability metrics as a proxy to identify high and low demand seasons.
+
+---
+
 ## 🗂️ Example Data: How to Test the App?
 
 To test the live dashboard, you need to download raw data for a specific city. 
@@ -34,15 +43,6 @@ To test the live dashboard, you need to download raw data for a specific city.
    - 📄 `listings.csv.gz`
    - 📅 `calendar.csv.gz`
 4. Go to the Live Demo link and upload these files directly. *(No need to extract them; the app processes `.gz` files automatically!)*
-
----
-
-## ✨ Key Features
-
-- 📊 **Dynamic Data Processing:** Seamlessly processes raw `.csv.gz` files directly—no manual extraction required.
-- 🎯 **Advanced Filtering:** Granular control over room types and minimum listing counts to filter out outliers.
-- 💰 **Revenue Estimation:** Benchmarks properties against local competitors to highlight potential missed revenue.
-- 📅 **Seasonality Tracking:** Uses calendar availability metrics as a proxy to identify high and low demand seasons.
 
 ---
 
