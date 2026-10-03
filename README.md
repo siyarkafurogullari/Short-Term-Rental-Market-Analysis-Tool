@@ -1,30 +1,52 @@
-# Short-Term Rental Analysis Tool — Quick Start Guide
+<div align="center">
 
-## Installation
+# 🏡 Short-Term Rental Market Analysis Dashboard
+*(Kısa Süreli Kiralama Pazar Analizi Aracı)*
+
+**A data-driven web application designed to analyze local short-term rental markets (e.g., Airbnb), optimize pricing strategies, and uncover missed revenue opportunities for property hosts.**
+
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.30+-FF4B4B.svg?style=flat&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+*Built to transform raw open-source data into actionable B2B sales strategies and financial insights.*
+
+</div>
+
+---
+
+## 📖 About the Project
+
+Property managers and local hosts often struggle to price their listings competitively, leading to significant missed revenue. This tool utilizes public data from **Inside Airbnb** to provide neighborhood-specific market insights, occupancy trends, and pricing optimizations. 
+
+It is not just an analytical dashboard; it is a **business development tool** designed to generate leads and offer data-as-a-service (DaaS) to short-term rental management companies.
+
+---
+
+## ✨ Key Features
+
+- 📊 **Dynamic Data Processing:** Seamlessly processes raw `.csv.gz` files directly—no manual extraction required.
+- 🎯 **Advanced Filtering:** Granular control over room types and minimum listing counts to filter out outliers.
+- 💰 **Revenue Estimation:** Benchmarks properties against local competitors to highlight potential missed revenue.
+- 📅 **Seasonality Tracking:** Uses calendar availability metrics as a proxy to identify high and low demand seasons.
+
+---
+
+## 🚀 Live Demo
+
+You can test the application live here:
+**[👉 Click here to view the Live Dashboard](https://short-term-rental-market-analysis-tool-wpcqxinpqbxhcqxdiqxh4e.streamlit.app/)**
+
+*(Upload your desired city's data from Inside Airbnb to see the dashboard in action.)*
+
+---
+
+## 💻 Quick Start & Installation
+
+To run this project locally, follow these steps:
+
+### 1. Clone the Repository
 ```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
-It opens automatically in your browser (typically at `http://localhost:8501`).
-
-## Usage
-1. Download Inside Airbnb data for your target city: http://insideairbnb.com/get-the-data/
-   - `listings.csv.gz`
-   - `calendar.csv.gz`
-2. Upload these two files to the application (you can upload them directly in `.gz` format as the code extracts them automatically—try uploading directly without extracting to CSV, and extract via `gunzip` only if you encounter an issue).
-3. Adjust the room type and minimum listing count filters from the sidebar.
-
-## How to Turn This Tool into Sales
-1. Select a city, run the dashboard, and take screenshots or record a short screen capture.
-2. Send the following outreach message to local host Facebook groups or short-term rental management accounts on Instagram:
-
-   > "I looked into the pricing and occupancy trends for hosts in [City] and put together a free, neighborhood-specific analysis. It highlights potential missed revenue opportunities—would you like me to send it over?"
-
-3. Walk interested hosts through the demo and highlight the "missed revenue" figures.
-4. Pricing structure:
-   - One-time analysis report: $150–250 (for early clients)
-   - Monthly pricing optimization subscription: $50–100/month (recurring revenue)
-
-## Notes
-- The `estimated_occupancy_l365d` and `estimated_revenue_l365d` fields come from Inside Airbnb's proprietary estimation model; they are not 100% exact, but they provide consistent benchmark comparisons.
-- The "unavailable" rate in the calendar file includes both confirmed bookings and days manually blocked by the host—it serves as an approximate proxy for seasonality, so be sure to disclose this when presenting to clients.
+git clone https://github.com/siyarkafurogullari/Short-Term-Rental-Market-Analysis-Tool.git
+cd Short-Term-Rental-Market-Analysis-Tool
